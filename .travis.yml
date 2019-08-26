@@ -10,7 +10,7 @@ env:
   - DEMYX_USERNAME=demyx DEMYX_REPOSITORY=docker-compose
 
 before_install:
-  - docker pull node:alpine
+  - docker pull alpine
 
 script:
   - docker build --no-cache -t demyx/"$DEMYX_REPOSITORY" .
