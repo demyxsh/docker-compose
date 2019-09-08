@@ -25,11 +25,9 @@ WORKDIR | $PWD
 
 ## Usage
 ```
-docker run -dt --rm \
---name docker-compose \
---net demyx \
---volumes-from example_container \
--p 3000:3000 \
--p 3001:3001 \
-demyx/docker-compose start --proxy example_container --files "/var/www/html/**/*" --host domain.tld --port 3000 --ui-port 3001
+docker run -t --rm \
+-v /var/run/docker.sock:/var/run/docker.sock:ro \
+--volumes-from container \
+--workdir "$PWD" \
+demyx/docker-compose up -d
 ```
