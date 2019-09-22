@@ -13,7 +13,7 @@ TITLE | DESCRIPTION
 ENTRYPOINT | dumb-init docker-compose
 WORKDIR | $PWD
 
-## Updates
+## Updates & Support
 [![Code Size](https://img.shields.io/github/languages/code-size/demyxco/docker-compose?style=flat&color=blue)](https://github.com/demyxco/docker-compose)
 [![Repository Size](https://img.shields.io/github/repo-size/demyxco/docker-compose?style=flat&color=blue)](https://github.com/demyxco/docker-compose)
 [![Watches](https://img.shields.io/github/watchers/demyxco/docker-compose?style=flat&color=blue)](https://github.com/demyxco/docker-compose)
@@ -22,6 +22,7 @@ WORKDIR | $PWD
 
 * Auto built weekly on Sundays (America/Los_Angeles)
 * Rolling release updates
+* For support: [#demyx](https://webchat.freenode.net/?channel=#demyx)
 
 ## Usage
 ```
