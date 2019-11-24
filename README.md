@@ -3,7 +3,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/demyx/docker-compose?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
 [![Architecture](https://img.shields.io/badge/linux-amd64-important?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
 [![Alpine](https://img.shields.io/badge/alpine-3.10.3-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
-[![Docker Compose](https://img.shields.io/badge/docker_compose-1.24.1-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
+[![Docker Compose](https://img.shields.io/badge/docker_compose-1.25.0-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
 [![Buy Me A Coffee](https://img.shields.io/badge/buy_me_coffee-$5-informational?style=flat&color=blue)](https://www.buymeacoffee.com/VXqkQK5tb)
 
 Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
