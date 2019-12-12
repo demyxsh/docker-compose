@@ -7,11 +7,11 @@ IFS=$'\n\t'
 
 # Get versions
 DEMYX_ALPINE_VERSION=$(docker run -t --rm node:alpine cat /etc/os-release | grep VERSION_ID | cut -c 12- | sed -e 's/\r//g')
-DEMYX_DOCKER_COMPOSE_VERSION=$(docker run -t --rm demyx/docker-compose --version | awk -F '[ ]' '{print $3}' | cut -c -6 | sed -e 's/\r//g')
+DEMYX_DOCKER_COMPOSE_VERSION=$(docker run -t --rm demyx/"$DEMYX_REPOSITORY" --version | awk -F '[ ]' '{print $3}' | cut -c -6 | sed -e 's/\r//g')
 
 # Replace versions
 sed -i "s|alpine-.*.-informational|alpine-${DEMYX_ALPINE_VERSION}-informational|g" README.md
-sed -i "s|docker_compose-.*.-informational|docker_compose-${DEMYX_DOCKER_COMPOSE_VERSION}-informational|g" README.md
+sed -i "s|${DEMYX_REPOSITORY}-.*.-informational|${DEMYX_REPOSITORY}-${DEMYX_DOCKER_COMPOSE_VERSION}-informational|g" README.md
 
 # Push back to GitHub
 git config --global user.email "travis@travis-ci.org"
