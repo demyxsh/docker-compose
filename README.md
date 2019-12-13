@@ -7,7 +7,7 @@
 [![Buy Me A Coffee](https://img.shields.io/badge/buy_me_coffee-$5-informational?style=flat&color=blue)](https://www.buymeacoffee.com/VXqkQK5tb)
 [![Become a Patron!](https://img.shields.io/badge/become%20a%20patron-$5-informational?style=flat&color=blue)](https://www.patreon.com/bePatron?u=23406156)
 
-Non-root Docker image running Alpine Linux and Docker Compose.
+Docker image running Alpine Linux and Docker Compose.
 
 DEMYX | DOCKER-COMPOSE
 --- | ---

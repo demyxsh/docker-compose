@@ -30,6 +30,4 @@ RUN apk --no-cache add --virtual .build-deps python-dev libffi-dev openssl-dev g
 
 WORKDIR "$DOCKER_COMPOSE_ROOT"
 
-USER demyx
-
 ENTRYPOINT ["dumb-init", "docker-compose"]
