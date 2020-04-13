@@ -1,16 +1,16 @@
 FROM alpine
 
-LABEL sh.demyx.image demyx/docker-compose
-LABEL sh.demyx.maintainer Demyx <info@demyx.sh>
-LABEL sh.demyx.url https://demyx.sh
-LABEL sh.demyx.github https://github.com/demyxco
-LABEL sh.demyx.registry https://hub.docker.com/u/demyx
+LABEL sh.demyx.image        demyx/docker-compose
+LABEL sh.demyx.maintainer   Demyx <info@demyx.sh>
+LABEL sh.demyx.url          https://demyx.sh
+LABEL sh.demyx.github       https://github.com/demyxco
+LABEL sh.demyx.registry     https://hub.docker.com/u/demyx
 
 # Set default variables
-ENV DOCKER_COMPOSE_ROOT=/demyx
-ENV DOCKER_COMPOSE_CONFIG=/etc/demyx
-ENV DOCKER_COMPOSE_LOG=/var/log/demyx
-ENV TZ America/Los_Angeles
+ENV DOCKER_COMPOSE_ROOT     /demyx
+ENV DOCKER_COMPOSE_CONFIG   /etc/demyx
+ENV DOCKER_COMPOSE_LOG      /var/log/demyx
+ENV TZ                      America/Los_Angeles
 
 # Configure Demyx
 RUN set -ex; \
