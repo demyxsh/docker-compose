@@ -11,7 +11,7 @@ DEMYX_DOCKER_COMPOSE_VERSION=$(docker exec "$DEMYX_REPOSITORY" "$DEMYX_REPOSITOR
 
 # Replace versions
 sed -i "s|alpine-.*.-informational|alpine-${DEMYX_ALPINE_VERSION}-informational|g" README.md
-sed -i "s|${DEMYX_REPOSITORY}-.*.-informational|${DEMYX_REPOSITORY}-${DEMYX_DOCKER_COMPOSE_VERSION}-informational|g" README.md
+sed -i "s|docker--compose-.*.-informational|docker--compose-${DEMYX_DOCKER_COMPOSE_VERSION}-informational|g" README.md
 
 # Push back to GitHub
 git config --global user.email "travis@travis-ci.org"
