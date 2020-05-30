@@ -22,11 +22,7 @@ RUN set -ex; \
     install -d -m 0755 -o demyx -g demyx "$DOCKER_COMPOSE_LOG"
 
 RUN echo 'http://dl-cdn.alpinelinux.org/alpine/latest-stable/community' >> /etc/apk/repositories; \
-    apk --update --no-cache add py-pip dumb-init tzdata
-
-RUN apk --no-cache add --virtual .build-deps python-dev libffi-dev openssl-dev gcc libc-dev make; \
-    pip install docker-compose; \
-    apk del .build-deps
+    apk --update --no-cache add docker-compose dumb-init tzdata
 
 WORKDIR "$DOCKER_COMPOSE_ROOT"
 

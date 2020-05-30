@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2020-05-30
+### Changed
+- Install docker-compose from package manager
+
 ## 2020-04-13
 ### Added
 ### Changed
