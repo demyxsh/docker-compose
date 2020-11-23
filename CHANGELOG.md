@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2020-11-22
+### Changed
+- Rename variables and support old ones
+- Use full paths to binaries/scripts
+
 ## 2020-05-30
 ### Changed
 - Install docker-compose from package manager
