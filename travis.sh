@@ -28,10 +28,10 @@ DEMYX_DOCKER_COMPOSE_VERSION=$DEMYX_DOCKER_COMPOSE_VERSION" > VERSION
 /usr/bin/git push origin HEAD:master
 
 # Send a PATCH request to update the description of the repository
-/bin//bin/echo "Sending PATCH request"
+/bin/echo "Sending PATCH request"
 DEMYX_DOCKER_TOKEN="$(/usr/bin/curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'"$DEMYX_USERNAME"'", "password": "'"$DEMYX_PASSWORD"'"}' "https://hub.docker.com/v2/users/login/" | /usr/local/bin/jq -r .token)"
 DEMYX_RESPONSE_CODE="$(/usr/bin/curl -s --write-out "%{response_code}" --output /dev/null -H "Authorization: JWT ${DEMYX_DOCKER_TOKEN}" -X PATCH --data-urlencode full_description@"README.md" "https://hub.docker.com/v2/repositories/${DEMYX_USERNAME}/${DEMYX_REPOSITORY}/")"
-/bin//bin/echo "Received response code: $DEMYX_RESPONSE_CODE"
+/bin/echo "Received response code: $DEMYX_RESPONSE_CODE"
 
 # Return an exit 1 code if response isn't 200
 [[ "$DEMYX_RESPONSE_CODE" != 200 ]] && exit 1
