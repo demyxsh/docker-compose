@@ -3,12 +3,12 @@
 # https://demyx.sh
 
 # Get versions
-DEMYX_DOCKER_COMPOSE_ALPINE_VERSION=$(/usr/bin/docker exec "$DEMYX_REPOSITORY" /bin/cat /etc/os-release | /bin/grep VERSION_ID | /usr/bin/cut -c 12- | /usr/bin/sed -e 's/\r//g')
-DEMYX_DOCKER_COMPOSE_VERSION=$(/usr/bin/docker exec "$DEMYX_REPOSITORY" /usr/bin/"$DEMYX_REPOSITORY" --version | awk -F '[ ]' '{print $3}' | /usr/bin/cut -c -6 | /usr/bin/sed -e 's/\r//g')
+DEMYX_DOCKER_COMPOSE_ALPINE_VERSION=$(/usr/bin/docker exec "$DEMYX_REPOSITORY" /bin/cat /etc/os-release | /bin/grep VERSION_ID | /usr/bin/cut -c 12- | /bin/sed 's/\r//g')
+DEMYX_DOCKER_COMPOSE_VERSION=$(/usr/bin/docker exec "$DEMYX_REPOSITORY" /usr/bin/"$DEMYX_REPOSITORY" --version | awk -F '[ ]' '{print $3}' | /usr/bin/cut -c -6 | /bin/sed 's/\r//g')
 
 # Replace versions
-/usr/bin/sed -i "s|alpine-.*.-informational|alpine-${DEMYX_DOCKER_COMPOSE_ALPINE_VERSION}-informational|g" README.md
-/usr/bin/sed -i "s|docker--compose-.*.-informational|docker--compose-${DEMYX_DOCKER_COMPOSE_VERSION}-informational|g" README.md
+/bin/sed -i "s|alpine-.*.-informational|alpine-${DEMYX_DOCKER_COMPOSE_ALPINE_VERSION}-informational|g" README.md
+/bin/sed -i "s|docker--compose-.*.-informational|docker--compose-${DEMYX_DOCKER_COMPOSE_VERSION}-informational|g" README.md
 
 # Echo versions to file
 /bin/echo "DEMYX_DOCKER_COMPOSE_ALPINE_VERSION=$DEMYX_DOCKER_COMPOSE_ALPINE_VERSION
