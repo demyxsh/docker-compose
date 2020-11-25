@@ -15,7 +15,7 @@ DEMYX_DOCKER_COMPOSE_VERSION=$(/usr/bin/docker exec "$DEMYX_REPOSITORY" /usr/bin
 DEMYX_DOCKER_COMPOSE_VERSION=$DEMYX_DOCKER_COMPOSE_VERSION" > VERSION
 
 # Push back to GitHub
-/usr/bin/git config --global user.email "travis@travis-ci.org"
+/usr/bin/git config --global user.email "travis@travis-ci.com"
 /usr/bin/git config --global user.name "Travis CI"
 /usr/bin/git remote set-url origin https://${DEMYX_GITHUB_TOKEN}@github.com/demyxco/"$DEMYX_REPOSITORY".git
 # Commit VERSION first
