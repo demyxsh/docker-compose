@@ -14,7 +14,7 @@ DEMYX | DOCKER-COMPOSE
 USER | demyx
 WORKDIR | /demyx
 CONFIG | /etc/demyx
-ENTRYPOINT | /usr/bin/docker-compose
+ENTRYPOINT | docker-compose
 TIMEZONE | America/Los_Angeles
 
 ## Usage
