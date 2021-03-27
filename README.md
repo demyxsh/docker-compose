@@ -2,7 +2,7 @@
 [![Build Status](https://img.shields.io/travis/demyxco/docker-compose?style=flat)](https://travis-ci.org/demyxco/docker-compose)
 [![Docker Pulls](https://img.shields.io/docker/pulls/demyx/docker-compose?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
 [![Architecture](https://img.shields.io/badge/linux-amd64-important?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
-[![Alpine](https://img.shields.io/badge/alpine-3.13.2-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
+[![Alpine](https://img.shields.io/badge/alpine-3.13.3-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
 [![Docker Compose](https://img.shields.io/badge/docker--compose-1.27.4-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-compose)
 [![Buy Me A Coffee](https://img.shields.io/badge/buy_me_coffee-$5-informational?style=flat&color=blue)](https://www.buymeacoffee.com/VXqkQK5tb)
 [![Become a Patron!](https://img.shields.io/badge/become%20a%20patron-$5-informational?style=flat&color=blue)](https://www.patreon.com/bePatron?u=23406156)
