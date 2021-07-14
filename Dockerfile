@@ -7,10 +7,11 @@ LABEL sh.demyx.github       https://github.com/demyxco
 LABEL sh.demyx.registry     https://hub.docker.com/u/demyx
 
 # Set default variables
-ENV DEMYX                   /demyx
-ENV DEMYX_CONFIG            /etc/demyx
-ENV DEMYX_LOG               /var/log/demyx
-ENV TZ                      America/Los_Angeles
+ENV COMPOSE_DOCKER_CLI_BUILD    0
+ENV DEMYX                       /demyx
+ENV DEMYX_CONFIG                /etc/demyx
+ENV DEMYX_LOG                   /var/log/demyx
+ENV TZ                          America/Los_Angeles
 # Support for old variables
 ENV DOCKER_COMPOSE_ROOT     "$DEMYX"
 ENV DOCKER_COMPOSE_CONFIG   "$DEMYX_CONFIG"
