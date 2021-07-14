@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2021-07-13
+### Changed
+- Suppress the "Building with native build." notice [3cf1685](https://github.com/demyxco/docker-compose/commit/3cf16859ddade5963ea77c069a67fe985ab298fe)
+
 ## 2021-02-22
 - Added
 - Changed
