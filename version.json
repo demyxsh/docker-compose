@@ -1,4 +1,4 @@
 {
-  "alpine": "init",
-  "docker_compose": "init"
+  "alpine": "3.15.0",
+  "docker_compose": "1.29.2"
 }
