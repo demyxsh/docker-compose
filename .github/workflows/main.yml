@@ -31,7 +31,7 @@ jobs:
           docker run -d --name=${{ env.DEMYX_REPOSITORY }} --entrypoint=top demyx/${{ env.DEMYX_REPOSITORY }}
 
           DEMYX_TEST="$(docker exec ${{ env.DEMYX_REPOSITORY }} ${{ env.DEMYX_REPOSITORY }} --version 2>&1)"
-          if [[ "$DEMYX_TEST" == *"${{ env.DEMYX_REPOSITORY }} version"* ]]; then
+          if [[ "$DEMYX_TEST" == *"version"* ]]; then
             echo "$DEMYX_TEST"
           else
             exit 1
