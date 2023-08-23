@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2023-08-23
+- Fix test [80378f6](https://github.com/demyxsh/docker-compose/commit/80378f649c1e3c4137a68a08cb6fd1012df20426)
+
 ## 2021-07-13
 ### Changed
 - Suppress the "Building with native build." notice [3cf1685](https://github.com/demyxsh/docker-compose/commit/3cf16859ddade5963ea77c069a67fe985ab298fe)
