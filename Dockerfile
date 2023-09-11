@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.17
 
 LABEL sh.demyx.image        demyx/docker-compose
 LABEL sh.demyx.maintainer   Demyx <info@demyx.sh>
