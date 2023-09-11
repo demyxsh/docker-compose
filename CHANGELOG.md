@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2023-09-10
+- Fix to 3.17 for now [5289580](https://github.com/demyxsh/docker-compose/commit/528958009e7699c43cf7f796f156a7186c16775d)
+
 ## 2023-08-23
 - Fix test [80378f6](https://github.com/demyxsh/docker-compose/commit/80378f649c1e3c4137a68a08cb6fd1012df20426)
 
