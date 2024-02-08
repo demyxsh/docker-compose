@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2024-02-07
+- Update description with shameless plug and support link [d08e3c6](https://github.com/demyxsh/docker-compose/commit/d08e3c61a49ff682e46e8cbc89c07b1c3fb624f9)
+- Fix version to Alpine 3.18 [74b8e71](https://github.com/demyxsh/docker-compose/commit/74b8e7196ab758e6ad6195b7e3ba80cdf35a391b)
+
 ## 2023-09-10
 - Fix to 3.17 for now [5289580](https://github.com/demyxsh/docker-compose/commit/528958009e7699c43cf7f796f156a7186c16775d)
 
